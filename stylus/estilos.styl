@@ -1,3 +1,63 @@
-h1
-	color red
-	text-transform uppercase
+@import "normalize.styl"
+
+// Varibles
+	gris_oscuro = #333333
+	gris_claro = #818181
+
+a
+	text-decoration none
+
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px
+
+figure
+	margin 0
+
+.button-menu
+	left 0.5em
+	margin-top -10px
+	position absolute
+	top 50%
+
+//OOCSS
+
+.border-bottom
+	border-bottom 1px solid gris_claro
+
+.container
+	font-size 0
+	padding 1.4rem
+	text-align center
+
+.name
+	color gris_oscuro
+
+.menu
+	display none
+
+.relative
+	position relative
+
+.autor
+	color gris_claro
+
+.header
+	height 3.5em
+	.title
+		font-size 1.1em
+		line-height 3.5em
+		margin 0
+		text-align center
+
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 8rem
+	&:nth-child(even)
+		margin-right 0
+	p
+		margin 0.5em 0
