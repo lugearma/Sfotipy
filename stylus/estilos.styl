@@ -1,8 +1,12 @@
 @import "normalize.styl"
 
+@import "fonts.styl"
+
+
 // Varibles
 	gris_oscuro = #333333
 	gris_claro = #818181
+	rojo = #BD255B
 
 a
 	text-decoration none
@@ -14,7 +18,27 @@ body
 figure
 	margin 0
 
+img
+	vertical-align top
+
+.action
+	color white
+	font-size 1.7em
+	margin-right 0.5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_oscuro
+
+.actions
+	background rgba(black, 0.5)
+	bottom 0
+	left 0
+	position absolute
+	right 0
+
 .button-menu
+	color gris_oscuro
 	left 0.5em
 	margin-top -10px
 	position absolute
@@ -25,9 +49,18 @@ figure
 .border-bottom
 	border-bottom 1px solid gris_claro
 
+.border-bottom-claro
+	border-bottom 1px solid #C0C0C0
+	
 .container
 	font-size 0
 	padding 1.4rem
+	text-align center
+
+.center-block
+	margin 0 auto
+
+.center-text
 	text-align center
 
 .name
@@ -38,6 +71,9 @@ figure
 
 .relative
 	position relative
+
+.right-text
+	text-align right
 
 .autor
 	color gris_claro
@@ -50,6 +86,9 @@ figure
 		margin 0
 		text-align center
 
+.relative
+	position relative
+
 .song
 	display inline-block
 	font-size 1rem
@@ -61,3 +100,44 @@ figure
 		margin-right 0
 	p
 		margin 0.5em 0
+
+.padding
+	padding 1em
+
+.pading-tb
+	padding 1em 0
+
+.playing
+	&.small
+		width 20em
+
+.progress
+	margin 1em 0
+	position relative
+	.max
+	.min
+		font-size 0.8em
+		position absolute
+		top -5px
+	.max
+		left 0
+	.min
+		right 0
+	.total
+		background gris_claro
+		height 5px
+		margin 0 auto
+		width 75%
+	.state
+		background rojo
+		height 5px
+		position relative
+		width 30%
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right -2px
+		top -2px
+		width 10px
