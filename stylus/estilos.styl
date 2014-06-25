@@ -6,6 +6,7 @@
 // Varibles
 	gris_oscuro = #333333
 	gris_claro = #818181
+	gris_masclaro = #F5F5F5
 	rojo = #BD255B
 
 a
@@ -20,6 +21,11 @@ figure
 
 img
 	vertical-align top
+
+ul
+	margin 0
+	padding 0
+
 
 .action
 	color white
@@ -47,7 +53,7 @@ img
 //OOCSS
 
 .border-bottom
-	border-bottom 1px solid gris_claro
+	border-bottom 1px solid #C5C5C5
 
 .border-bottom-claro
 	border-bottom 1px solid #C0C0C0
@@ -97,28 +103,38 @@ img
 	text-align left
 	width 8rem
 	&:nth-child(even)
-		margin-right 0
+		margin-right: 0
 	p
-		margin 0.5em 0
+		margin: 0.5em 0
 
 .padding
-	padding 1em
+	padding: 1em
 
 .pading-tb
-	padding 1em 0
+	padding: 1em 0
+
+.left
+	float left
+
+.right
+	float right
+	
+.wrap
+	width 1000px
 
 .playing
 	&.small
 		width 20em
+		margin 0 auto
 
 .progress
 	margin 1em 0
 	position relative
 	.max
 	.min
-		font-size 0.8em
-		position absolute
-		top -5px
+		font-size: 0.8em
+		position: absolute
+		top: -5px
 	.max
 		left 0
 	.min
@@ -141,3 +157,141 @@ img
 		right -2px
 		top -2px
 		width 10px
+
+.redondea
+	border-radius 50%
+	overflow hidden
+
+.input
+	border 1px solid gris_claro
+	height 2.3em
+	border-radius 5px
+	padding 0 1em 0 2.5em
+
+.icon-lupa
+	position absolute
+	left 0.5em
+	top 0.4em
+	color gris_claro
+	border-right 1px solid #b8b8b8
+	padding 5px 2px 5px 0
+
+.close-icon
+	position absolute
+	top 0.45em
+	color gris_claro
+	right 0.5em
+	font-size 1.2em
+	font-weight 600
+	padding-right 5px
+
+.search
+	padding-right 1em
+
+.playlist
+		border-left	1px solid #C5C5C5
+		display block
+		display none
+		padding 0 2em
+		width 22em
+		.list
+			list-style none
+		.item
+			padding 1em 0
+		.action
+			font-size 16px
+
+.isotipo
+		width 122px
+
+.logo
+	background white
+	display block
+	display none
+	overflow hidden
+	padding 1.3em 0
+
+.username
+	color gris_claro
+	margin-left 0.5em
+	position relative
+	top 9px
+	&:after
+		border-left 6px solid transparent
+		border-right 6px solid transparent
+		border-top 7px solid gris_claro
+		content ""
+		display inline-block
+		margin-left 0.1em
+
+//*********** RESPONSIVE DESING ************
+
+@media screen and (min-width:480px)
+
+	.song
+		&:nth-child(even)
+			margin-right 1em
+
+	.image
+		img
+			height auto
+			width 100%
+
+	.playing
+		&.medium
+			width auto
+
+@media screen and (min-width:1000px)
+
+	body
+		background gris_masclaro
+
+	.avatar
+		height 38px
+		width 38px
+
+	.button-menu
+		display none
+	
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+
+	.header
+		border none
+		height auto
+		.title
+			display none
+	
+
+	.menu
+		background gris_masclaro
+		border-top 1px solid #C5C5C5
+		display block
+		overflow hidden
+		.item
+			float left
+			list-style none
+			a
+				border-top 5px solid transparent
+				color gris_oscuro
+				cursor pointer
+				display block
+				font-weight 300
+				padding 1em
+				text-transform uppercase
+				&:hover
+					border-top 5px solid gris_claro
+	
+	.playing
+		padding-top 1em
+		&.large
+			margin 0 auto
+			overflow hidden
+			width 62.5em
+
+	.logo
+	.playing
+		display block

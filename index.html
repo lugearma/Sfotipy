@@ -9,26 +9,44 @@
 </head>
 <body>
 	<header class="header relative border-bottom">
+		<div class="logo">
+			<div class="wrap center-block">
+				<figure class="image isotipo left">
+					<img src="img/logo" alt="Sfotipy" />
+				</figure>
+				<div class="user right">
+					<figure class="avatar redondea left">
+						<img src="img/mario" alt="@lugearma" width="38" height="38">
+					</figure>
+					<span class="left username">
+					@lugearma
+					</span>
+				</div>
+				<div class="search right">
+					<form class="relative">
+						<span class="icon-lupa icon-lupa">
+							
+						</span>
+						<input type="text" placeholder="lugearma" class="input" />
+						<span class="close-icon">x</span>
+					</form>
+				</div>
+			</div>
+		</div>
 		<a class="button-menu icon-menu"></a>
 		<nav class="menu">
-			<ul class="list">
+			<ul class="list center-block wrap">
 				<li class="item">
 					<a href="#">Top hits</a>
 				</li>
 				<li class="item">
-					<a href="#">Play list</a>
+					<a href="#">Profile</a>
 				</li>
 				<li class="item">
-					<a href="#">Top hits</a>
+					<a href="#">Settings</a>
 				</li>
 				<li class="item">
-					<a href="#">Top hits</a>
-				</li>
-				<li class="item">
-					<a href="#">Top hits</a>
-				</li>
-				<li class="item">
-					<a href="#">Top hits</a>
+					<a href="#">Playlist</a>
 				</li>
 			</ul>
 		</nav>
@@ -38,45 +56,171 @@
 			</span>
 		</div>
 	</header>
-	<section class="playing small center-block">
-		<figure class="image relative">
-			<img src="img/songs/portada.jpg" width="320" height="320" alt="In tha club 50 Cent">
-			<div class="actions padding right-text">
-				<a href="" class="action icon-mas"></a>
-				<a href="" class="action icon-like"></a>
-				<a href="" class="action icon-import"></a>
-			</div>
-		</figure>
-		<div class="padding">
-			<div class="progress">
-				<span class="min">0:46</span>
-					<div class="total">
-						<div class="state">
-							<div class="circle">
-								
+	<section class="playing small medium large">
+		<div class="music">
+			<figure class="image relative">
+				<img src="img/songs/portada.jpg" width="320" height="320" alt="In tha club 50 Cent">
+				<div class="actions padding right-text">
+					<a href="" class="action icon-mas"></a>
+					<a href="" class="action icon-like"></a>
+					<a href="" class="action icon-import"></a>
+				</div>
+			</figure>
+			<div class="padding">
+				<div class="progress">
+					<span class="min">0:46</span>
+						<div class="total">
+							<div class="state">
+								<div class="circle">
+									
+								</div>
 							</div>
 						</div>
-					</div>
-				<span class="max">4:03</span>
-			</div>
-			<div class="description center-text border-bottom-claro">
-				<p class="name">
-					In tha club
-				</p>
-				<p class="autor">
-					50 Cent
-				</p>
-			</div>
-			<div class="play center-text pading-tb">
-				<a href="" class="action gray icon-regresar"></a>
-				<a href="" class="action gray icon-play"></a>
-				<a href="" class="action gray icon-siguiente"></a>
-				<a href="" class="action gray icon-aleatorio"></a>
-				<a href="" class="action gray icon-vol"></a>
-			</div>
+					<span class="max">4:03</span>
+				</div>
+				<div class="description center-text border-bottom-claro">
+					<p class="name">
+						In tha club
+					</p>
+					<p class="autor">
+						50 Cent
+					</p>
+				</div>
+				<div class="play center-text pading-tb">
+					<a href="" class="action gray icon-regresar"></a>
+					<a href="" class="action gray icon-play"></a>
+					<a href="" class="action gray icon-siguiente"></a>
+					<a href="" class="action gray icon-aleatorio"></a>
+					<a href="" class="action gray icon-vol"></a>
+				</div>
+			</div>	
+		</div>
+		<div class="playlist right">
+			<p class="name">
+				Curtis
+			</p>
+			<p class="autor">
+				50 Cent				
+			</p>
+			<ul class="list">
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>In my hood</span>
+					<span class="right">
+						<a class="action icon-mas gray"></a>
+						<a class="action icon-like gray"></a>
+						<a class="action icon-import gray"></a>
+					</span>
+				</li>
+			</ul>
 		</div>
 	</section>
 	<section class="container">
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
+			</figure>
+			<p class="name">
+				Hood
+			</p>
+			<p class="autor">
+				50 Cent
+			</p>
+		</article>
 		<article class="song">
 			<figure class="image">
 				<img src="img/songs/portada.jpg" width="128" height="128" alt="50 Cent">
